@@ -167,7 +167,7 @@ TEST(KindOfTest, Integer) {
   EXPECT_EQ(kInteger, GMOCK_KIND_OF_(unsigned long long));  // NOLINT
   EXPECT_EQ(kInteger, GMOCK_KIND_OF_(wchar_t));             // NOLINT
   EXPECT_EQ(kInteger, GMOCK_KIND_OF_(size_t));              // NOLINT
-#if GTEST_OS_LINUX || GTEST_OS_MAC || GTEST_OS_CYGWIN
+#if GTEST_OS_LINUX || GTEST_OS_QNX || GTEST_OS_MAC || GTEST_OS_CYGWIN
   // ssize_t is not defined on Windows and possibly some other OSes.
   EXPECT_EQ(kInteger, GMOCK_KIND_OF_(ssize_t));  // NOLINT
 #endif

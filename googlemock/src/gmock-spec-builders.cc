@@ -48,7 +48,7 @@
 #include "gtest/gtest.h"
 #include "gtest/internal/gtest-port.h"
 
-#if GTEST_OS_CYGWIN || GTEST_OS_LINUX || GTEST_OS_MAC
+#if GTEST_OS_CYGWIN || GTEST_OS_LINUX || GTEST_OS_QNX || GTEST_OS_MAC
 #include <unistd.h>  // NOLINT
 #endif
 
